@@ -1,6 +1,6 @@
 # organicsteps
 
-Organic Steps™ is an Student Organization (RSO) at the University of Washington, Seattle Campus.
+[Organic Steps™](https://githubn0ob.github.io/organic-steps/#/) is an Student Organization (RSO) at the University of Washington, Seattle Campus.
 
 ## Getting Started
 
