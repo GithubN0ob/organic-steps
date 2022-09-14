@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:organicsteps/commons/constants.dart';
 
 import 'commons/hp_footer.dart';
 import 'commons/hp_sub_section.dart';
@@ -17,10 +18,10 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     sections = [
-      Section('About us', 'coming soon'),
-      Section('Events', 'coming soon'),
-      Section('Tips for OCHEM', 'coming soon'),
-      Section('Get Connected', 'coming soon'),
+      Section('About us', about_us_richtext),
+      Section('Events', events_richtext),
+      Section('Get Connected', get_connected_richtext),
+      Section('Tips for OCHEM', tips_richtext),
     ];
   }
 
@@ -29,38 +30,45 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(200.0),
-        child: Container(
-          color: Colors.purple,
-          child: AppBar(
-            flexibleSpace: Image(
-              image: AssetImage('assets/images/banner1.jpg'),
+        child: AppBar(
+          flexibleSpace: AspectRatio(
+            aspectRatio: 27/9,
+            child: Image(
+              image: AssetImage('assets/images/banner4.jpg'),
               fit: BoxFit.cover,
             ),
-            bottom: PreferredSize(
-              preferredSize: const Size.fromHeight(20),
-              child: Container(
-                height: 20,
-                color: Colors.blue,
-              ),
+          ),
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(20),
+            child: Container(
+              height: 20,
+              color: Colors.blue,
             ),
           ),
         ),
       ),
       body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              ListView.separated(
-                padding: const EdgeInsets.all(15.0),
-                shrinkWrap: true,
-                itemBuilder: (context, i) => HPSubSection(data: sections[i]),
-                itemCount: sections.length,
-                separatorBuilder: (context, index) => const SizedBox(height: 32,),
-              ),
-              const SizedBox(height: 16),
-              // HPFooter(),
-            ],
-          ),
+        child: Column(
+          children: [
+            ListView.separated(
+              padding: const EdgeInsets.all(15.0),
+              shrinkWrap: true,
+              itemBuilder: (context, i) => HPSubSection(data: sections[i]),
+              itemCount: sections.length,
+              separatorBuilder: (context, index) => const SizedBox(height: 32,),
+            ),
+            const SizedBox(height: 16),
+            Image(
+              height: 80,
+              width: 80,
+              image: AssetImage('assets/images/icons/icon.jpg'),
+              // fit: BoxFit.,
+            ),
+            Text("“Grow through understanding”"),
+            Text("OSemail@uw.edu"),
+            const SizedBox(height: 16),
+            HPFooter(),
+          ],
         ),
       ),
     );
