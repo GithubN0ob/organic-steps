@@ -11,12 +11,21 @@ class _HPFooterState extends State<HPFooter> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(16.0),
       color: Colors.blue,
-      height: 64,
+      height: 32,
       width: MediaQuery.of(context).size.width,
-      child: Row(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
+        children: const [
+          // Image(
+          //   height: 50,
+          //   width: 50,
+          //   image: AssetImage('assets/images/icons/icon.jpg'),
+          //   fit: BoxFit.cover,
+          // ),
+          // Text("“Grow through understanding”"),
+          // Text("OSemail@uw.edu"),
           // Image
           // Social Media
           // StackOverflow Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.9.6.42958

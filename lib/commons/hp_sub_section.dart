@@ -4,7 +4,7 @@ import 'constants.dart';
 
 class Section {
   String header;
-  String content;
+  Widget content;
 
   Section(this.header, this.content);
 }
@@ -22,30 +22,28 @@ class _HPSubSectionState extends State<HPSubSection> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            padding: const EdgeInsets.all(4.0),
-            decoration: const BoxDecoration(
-              border: Border(
-                bottom: BorderSide(
-                  width: 4.5,
-                  color: Colors.black87,
-                ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(4.0),
+          decoration: const BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                width: 4.5,
+                color: Colors.black87,
               ),
-              color: Colors.transparent,
             ),
-            key: headerKey,
-            child: Text(widget.data.header),
+            color: Colors.transparent,
           ),
-          const SizedBox(
-            height: 16,
-          ),
-          Text(lorem_ipsum),
-        ],
-      ),
+          key: headerKey,
+          child: Text(widget.data.header),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        widget.data.content,
+      ],
     );
   }
 }
