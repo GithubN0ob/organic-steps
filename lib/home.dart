@@ -28,34 +28,47 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(200.0),
-        child: AppBar(
-          flexibleSpace: AspectRatio(
-            aspectRatio: 27/9,
-            child: Image(
-              image: AssetImage('assets/images/banner4.jpg'),
-              fit: BoxFit.cover,
-            ),
-          ),
-          bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(20),
-            child: Container(
-              height: 20,
-              color: Colors.blue,
-            ),
-          ),
-        ),
-      ),
+      // appBar: PreferredSize(
+      //   preferredSize: const Size.fromHeight(200.0),
+      //   child: AppBar(
+      //     flexibleSpace: AspectRatio(
+      //       aspectRatio: 27 / 9,
+      //       child: Image(
+      //         image: AssetImage('assets/images/banner4.jpg'),
+      //         fit: BoxFit.cover,
+      //       ),
+      //     ),
+      //     bottom: PreferredSize(
+      //       preferredSize: const Size.fromHeight(20),
+      //       child: Container(
+      //         height: 20,
+      //         color: Colors.blue,
+      //       ),
+      //     ),
+      //   ),
+      // ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+            AspectRatio(
+              aspectRatio: 4,
+              child: Image(
+                image: AssetImage('assets/images/banner4.jpg'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            Container(
+              height: 10,
+              color: Colors.blue,
+            ),
             ListView.separated(
               padding: const EdgeInsets.all(15.0),
               shrinkWrap: true,
               itemBuilder: (context, i) => HPSubSection(data: sections[i]),
               itemCount: sections.length,
-              separatorBuilder: (context, index) => const SizedBox(height: 32,),
+              separatorBuilder: (context, index) => const SizedBox(
+                height: 32,
+              ),
             ),
             const SizedBox(height: 16),
             Image(
