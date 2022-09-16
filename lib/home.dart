@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             AspectRatio(
-              aspectRatio: 4,
+              aspectRatio: 5.5,
               child: Image(
                 image: AssetImage('assets/images/banner4.jpg'),
                 fit: BoxFit.fill,
@@ -77,7 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
               image: AssetImage('assets/images/icons/icon.jpg'),
               // fit: BoxFit.,
             ),
-            Text("“Grow through understanding”"),
+            Text(
+                "“If we succeed in giving the love of learning, the learning itself is sure to follow”- John Lubbock"),
             Text("OSemail@uw.edu"),
             const SizedBox(height: 16),
             HPFooter(),
