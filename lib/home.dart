@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Section('About us', about_us_richtext),
       Section('Events', events_richtext),
       Section('Get Connected', get_connected_richtext),
-      Section('Tips for OCHEM', tips_richtext),
+      Section('Our Tip for OCHEM', tips_richtext),
     ];
   }
 
@@ -79,7 +79,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
                 "“If we succeed in giving the love of learning, the learning itself is sure to follow”- John Lubbock"),
+            const SizedBox(height: 4,),
             Text("OSemail@uw.edu"),
+            const SizedBox(height: 4,),
+            Text("University of Washington"),
             const SizedBox(height: 16),
             HPFooter(),
           ],

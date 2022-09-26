@@ -68,9 +68,9 @@ RichText events_richtext = RichText(
           style: TextStyle(fontWeight: FontWeight.bold)),
       TextSpan(text: '''
 
-Come meet the officers, learn about regular sessions, and build connections with other students who are interested in OCHEM. 
+Come meet the officers, learn about regular sessions, and build connections with other students who are interested in OCHEM. We will stick around after the opening session to answer any questions.
 
-September 30th, 4:00pm, BAG Hall 
+September 30th, 4:00-4:30pm BAG 330 (general chemistry study center) 
 
 '''),
       TextSpan(
@@ -79,17 +79,16 @@ September 30th, 4:00pm, BAG Hall
       TextSpan(
         text: '''
 
-Let’s meet you where you are at! Join us for a brief lecture and related practice problems or get help with questions and homework from an attending officer. The date, time, and location for regular sessions are listed below: 
+Let’s meet you where you are at! Our regular sessions offer multiple learning formats: prepared lecture, prepared practice problems, and help with homework/problems. Attending officers are happy to answer any questions you may have about OCHEM. The date, time, and location for regular sessions are listed below:
 
-October 7th, 4:00pm, BAG Hall 
-October 14th, 4:00pm, BAG Hall 
-October 21st, 4:00pm, BAG Hall 
-October 28th, 4:00pm, BAG Hall 
-November 4th, 4:00pm, BAG Hall 
-November 11th, 4:00pm, BAG Hall 
-November 18th, 4:00pm, BAG Hall 
-November 25th, 4:00pm, BAG Hall 
-November 4th, 4:00pm, BAG Hall 
+October 7th, (F) 5:30-6:30pm BAG 331A
+October 14th, (F) 5:30-6:30pm BAG 331A
+October 21st, (F) 5:30-6:30pm BAG 331A
+October 28th, (F) 5:30-6:30pm BAG 331A
+November 4th, (F) 5:30-6:30pm BAG 331A 
+November 11th, (F) 5:30-6:30pm BAG 331A
+November 18th, (F) 5:30-6:30pm BAG 331A
+December 2nd , (F) 5:30-6:30pm BAG 331A 
 
 ''',
       ),
@@ -99,9 +98,7 @@ November 4th, 4:00pm, BAG Hall
       TextSpan(
         text: '''
 
-December 2nd, 4:00pm, BAG Hall 
-
-[Description] 
+December 9th, 5:30-6:30pm BAG 331A
 ''',
       ),
     ],
@@ -165,7 +162,7 @@ RichText tips_richtext = RichText(
     children: <TextSpan>[
       TextSpan(
         text:
-            """Our philosophy behind academic success is that comprehension is greater than memorization. Instead of force feeding our brains information about chemical reactions and memorizing spectroscopy tables, let’s focus on the foundational ideas behind such concepts. Not only will understanding these concepts make memorization easier, but this comprehension will lead to greater enjoyment of the subject.  
+            """Our philosophy behind academic success is that comprehension is greater than memorization. Instead of force feeding our brains information about chemical reactions and memorizing spectroscopy values, let’s focus on the foundational ideas behind such concepts. Not only will understanding these concepts make memorization easier, but this comprehension will lead to greater enjoyment of the subject.
 
 To learn more about what helped us succeed in organic chemistry, join us at one of our regular sessions listed above!""",
       ),
