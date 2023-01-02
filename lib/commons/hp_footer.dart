@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HPFooter extends StatefulWidget {
-  HPFooter({Key? key}) : super(key: key);
+  const HPFooter({Key? key}) : super(key: key);
 
   @override
   State<HPFooter> createState() => _HPFooterState();

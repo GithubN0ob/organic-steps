@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'constants.dart';
-
 class Section {
   String header;
   Widget content;
@@ -10,7 +8,7 @@ class Section {
 }
 
 class HPSubSection extends StatefulWidget {
-  HPSubSection({Key? key, required this.data}) : super(key: key);
+  const HPSubSection({Key? key, required this.data}) : super(key: key);
   final Section data;
 
   @override
