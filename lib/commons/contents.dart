@@ -113,8 +113,7 @@ RichText get_connected_richtext = RichText(
             '''
 
 
-Fill out the form on our RSO webpage to become a member.
-Membership form: ''',
+Become a member by joining on our RSO webpage:''',
       ),
       TextSpan(
         text: 'https://huskylink.washington.edu/organization/organicsteps',
