@@ -2,15 +2,6 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-String lorem_ipsum =
-    """Lorem Ipsum is simply dummy text of the printing and typesetting 
-industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-It has survived not only five centuries, but also the leap into electronic typesetting, 
-remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-like Aldus PageMaker including versions of Lorem Ipsum.""";
-
 RichText about_us_richtext = RichText(
   text: const TextSpan(
     // Note: Styles for TextSpans must be explicitly defined.
@@ -70,7 +61,7 @@ RichText events_richtext = RichText(
 
 Come meet the officers, learn about regular sessions, and build connections with other students who are interested in OCHEM. We will stick around after the opening session to answer any questions.
 
-September 30th, 4:00-4:30pm BAG 330 (general chemistry study center) 
+January 6th, 4:00-4:20pm BAG 330 (general chemistry study center) 
 
 '''),
       TextSpan(
@@ -81,14 +72,15 @@ September 30th, 4:00-4:30pm BAG 330 (general chemistry study center)
 
 Let’s meet you where you are at! Our regular sessions offer multiple learning formats: prepared lecture, prepared practice problems, and help with homework/problems. Attending officers are happy to answer any questions you may have about OCHEM. The date, time, and location for regular sessions are listed below:
 
-October 7th, (F) 5:30-6:30pm BAG 331A
-October 14th, (F) 5:30-6:30pm BAG 331A
-October 21st, (F) 5:30-6:30pm BAG 331A
-October 28th, (F) 5:30-6:30pm BAG 331A
-November 4th, (F) 5:30-6:30pm BAG 331A 
-November 11th, (F) 5:30-6:30pm BAG 331A
-November 18th, (F) 5:30-6:30pm BAG 331A
-December 2nd , (F) 5:30-6:30pm BAG 331A 
+January 6th, (F) 5:30-6:30pm BAG 108
+January 13th, (F) 5:30-6:30pm BAG 108
+January 20th, (F) 5:30-6:30pm BAG 108
+January 27th, (F) 5:30-6:30pm BAG 108
+February 3th, (F) 5:30-6:30pm BAG 108
+February 10th, (F) 5:30-6:30pm BAG 108
+February 17th, (F) 5:30-6:30pm BAG 108
+February 24th, (F) 5:30-6:30pm BAG 108
+March 3th, (F) 5:30-6:30pm BAG 108
 
 ''',
       ),
@@ -98,7 +90,7 @@ December 2nd , (F) 5:30-6:30pm BAG 331A
       TextSpan(
         text: '''
 
-December 9th, 5:30-6:30pm BAG 331A
+March 10th, (F) 5:30-7:00pm BAG 108
 ''',
       ),
     ],
@@ -107,32 +99,32 @@ December 9th, 5:30-6:30pm BAG 331A
 
 RichText get_connected_richtext = RichText(
   text: TextSpan(
-    style: TextStyle(
+    style: const TextStyle(
       fontSize: 14.0,
       color: Colors.black,
     ),
     children: <TextSpan>[
-      TextSpan(
+      const TextSpan(
         text: 'Join the Organic Steps community!',
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
-      TextSpan(
+      const TextSpan(
         text:
             '''
 
 
-Fill out the form to become a member and receive reminders about upcoming events.
+Fill out the form on our RSO webpage to become a member.
 Membership form: ''',
       ),
       TextSpan(
-        text: 'https://forms.gle/6NgUHULhbRrGRFPd9',
+        text: 'https://huskylink.washington.edu/organization/organicsteps',
         style: TextStyle(color: Colors.blue),
         recognizer: TapGestureRecognizer()
           ..onTap = () {
-            launchUrl(Uri.parse('https://forms.gle/6NgUHULhbRrGRFPd9'));
+            launchUrl(Uri.parse('https://huskylink.washington.edu/organization/organicsteps'));
           },
       ),
-      TextSpan(
+      const TextSpan(
         text: '''
 
 
@@ -141,7 +133,7 @@ Discord: ''',
       ),
       TextSpan(
         text: 'https://discord.gg/bKjWgCcYDh',
-        style: TextStyle(color: Colors.blue),
+        style: const TextStyle(color: Colors.blue),
         recognizer: TapGestureRecognizer()
           ..onTap = () {
             launchUrl(Uri.parse('https://discord.gg/bKjWgCcYDh'));
